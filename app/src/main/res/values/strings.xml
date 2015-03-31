@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SQLiteTest.git</string>
+    <string name="app_name">SQLiteTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_noticia_list">NoticiaListActivit</string>
+    <string name="title_activity_noticia_form">NoticiaFormActivity</string>
 
 </resources>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fae.edu.sqlitetestgit.NoticiaListActivit">
+
+    <item
+        android:id="@+id/action_new"
+        app:showAsAction="ifRoom"
+        android:title="Novo"
+        android:icon="@drawable/content_new"/>
+
+    <item
+        android:id="@+id/action_refresh"
+        app:showAsAction="ifRoom"
+        android:title="Atualizar"
+        android:icon="@drawable/navigation_refresh"/>
+
+
+</menu>

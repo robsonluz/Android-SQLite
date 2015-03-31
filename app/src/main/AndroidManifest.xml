@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NoticiaListActivit"
+            android:label="@string/title_activity_noticia_list" >
+        </activity>
+        <activity
+            android:name=".NoticiaFormActivity"
+            android:label="@string/title_activity_noticia_form" >
+        </activity>
     </application>
 
 </manifest>
