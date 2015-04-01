@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_noticia_list">NoticiaListActivit</string>
     <string name="title_activity_noticia_form">NoticiaFormActivity</string>
+    <string name="title_activity_noticia_detail">NoticiaDetailActivity</string>
 
 </resources>

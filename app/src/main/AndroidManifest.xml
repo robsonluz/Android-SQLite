@@ -24,6 +24,10 @@
             android:name=".NoticiaFormActivity"
             android:label="@string/title_activity_noticia_form" >
         </activity>
+        <activity
+            android:name=".NoticiaDetailActivity"
+            android:label="@string/title_activity_noticia_detail" >
+        </activity>
     </application>
 
 </manifest>

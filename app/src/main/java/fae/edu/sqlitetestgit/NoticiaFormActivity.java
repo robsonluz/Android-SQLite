@@ -21,8 +21,18 @@ public class NoticiaFormActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_noticia_form);
+        if(getIntent().hasExtra("noticia")) {
+            noticia = (Noticia) getIntent().getExtras().get("noticia");
 
-        noticia = new Noticia();
+            Utils.setTextEditText(this, R.id.editTitulo, noticia.getTitulo());
+            Utils.setTextEditText(this, R.id.editTexto, noticia.getTexto());
+
+            //Edicao
+        }else{
+            //Cria um novo
+            noticia = new Noticia();
+        }
+
     }
 
 

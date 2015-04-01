@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.List;
@@ -26,6 +28,13 @@ public class NoticiaListActivit extends ActionBarActivity {
 
         ListView noticiasListView = (ListView) findViewById(R.id.noticiasListView);
 
+        noticiasListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                onListItemClick(position);
+            }
+        });
+
         noticiaDao = new NoticiaDao();
         noticiaListAdapter = new NoticiaListAdapter(this);
 
@@ -39,6 +48,17 @@ public class NoticiaListActivit extends ActionBarActivity {
         noticiaListAdapter.clear();
         noticiaListAdapter.addAll(noticias);
     }
+
+
+
+    private void onListItemClick(int position) {
+        Intent intent = new Intent(this, NoticiaDetailActivity.class);
+        Noticia noticia = (Noticia) noticiaListAdapter.getItem(position);
+        //Passando o id da noticia clicada para a tela de detalhe
+        intent.putExtra("noticia", noticia);
+        startActivity(intent);
+    }
+
 
 
     @Override
