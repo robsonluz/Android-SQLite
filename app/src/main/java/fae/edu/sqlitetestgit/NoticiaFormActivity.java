@@ -1,7 +1,7 @@
 package fae.edu.sqlitetestgit;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,7 +13,7 @@ import fae.edu.sqlitetestgit.dao.NoticiaDao;
 import fae.edu.sqlitetestgit.model.Noticia;
 
 
-public class NoticiaFormActivity extends ActionBarActivity {
+public class NoticiaFormActivity extends AppCompatActivity {
     NoticiaDao noticiaDao = new NoticiaDao();
     private Noticia noticia;
 

@@ -1,8 +1,8 @@
 package fae.edu.sqlitetestgit;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,7 +15,7 @@ import fae.edu.sqlitetestgit.dao.NoticiaDao;
 import fae.edu.sqlitetestgit.model.Noticia;
 
 
-public class NoticiaListActivit extends ActionBarActivity {
+public class NoticiaListActivity extends AppCompatActivity {
 
     private NoticiaDao noticiaDao;
     private NoticiaListAdapter noticiaListAdapter;
@@ -53,7 +53,7 @@ public class NoticiaListActivit extends ActionBarActivity {
 
     private void onListItemClick(int position) {
         Intent intent = new Intent(this, NoticiaDetailActivity.class);
-        Noticia noticia = (Noticia) noticiaListAdapter.getItem(position);
+        Noticia noticia = noticiaListAdapter.getItem(position);
         //Passando o id da noticia clicada para a tela de detalhe
         intent.putExtra("noticia", noticia);
         startActivity(intent);

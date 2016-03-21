@@ -1,8 +1,8 @@
 package fae.edu.sqlitetestgit;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -12,12 +12,10 @@ import fae.edu.sqlitetestgit.dao.NoticiaDao;
 import fae.edu.sqlitetestgit.model.Noticia;
 
 
-public class NoticiaDetailActivity extends ActionBarActivity {
+public class NoticiaDetailActivity extends AppCompatActivity {
 
     private NoticiaDao noticiaDao = new NoticiaDao();
     private Noticia noticia;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
